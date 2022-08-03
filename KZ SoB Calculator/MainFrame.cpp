@@ -127,7 +127,7 @@ void MainFrame::SetupGameStore()
     }
 
     GetGalaxyId(this->galaxy_id);
-    bool galaxy_found = this->galaxy_id != "" && fs::exists(LocalAppdata + "\\Katana_ZERO\\KatanaSpeedrunOpt" + this->galaxy_id + ".zero");
+    bool galaxy_found = this->galaxy_id != "" && fs::exists(LocalAppdata + "\\Katana_ZERO\\KatanaSpeedrunOpt.zero");
     if (galaxy_found) {
         this->settings->game_store->Insert("GOG", 0);
     }
